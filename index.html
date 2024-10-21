@@ -3,41 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ["Poppins"],
-            },
-            keyframes: {
-              slidein: {
-                from: {
-                  opacity: "0",
-                  transform: "translateY(-10px)",
-                },
-                to: {
-                  opacity: "1",
-                  transform: "translateY(0)",
-                },
-              },
-            },
-            animation: {
-              slidein300: "slidein 1s ease  forwards",
-              slidein500: "slidein 2s ease forwards",
-              slidein700: "slidein 3s ease  forwards",
-            },
-          },
-        },
-      };
-    </script>
+    <link href="./output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./home.css" />
     <title>Dharaa International</title>
   </head>
@@ -137,7 +109,7 @@
         </div>
       </nav>
       <div
-        class="banner-part h-fit flex flex-col items-center justify-center md:gap-10 gap-5 text-white animate-slidein500 p-3"
+        class="banner-part h-fit flex flex-col items-center justify-center md:gap-10 gap-5 text-white p-3"
       >
         <p
           class="text-3xl md:text-6xl animate-slidein500 font-semibold lg:w-[75%] w-auto text-center leading-normal"
@@ -145,7 +117,7 @@
           Leading the Charge in Global Health Innovation
         </p>
         <p
-          class="animate-slidein700 text-2xl md:text-4xl font-semibold lg:w-[75%] w-auto text-center leading-normal"
+          class="animate-fade-right animate-duration-[3000ms] text-2xl md:text-4xl font-semibold lg:w-[75%] w-auto text-center leading-normal"
         >
           Delivering safe, reliable, and high-quality APIs to improve lives
           worldwide
