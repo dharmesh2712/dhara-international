@@ -1062,6 +1062,10 @@ video {
   gap: 3rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-24 {
   gap: 6rem;
 }
@@ -1084,10 +1088,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-16 {
-  gap: 4rem;
 }
 
 .space-x-0 > :not([hidden]) ~ :not([hidden]) {
@@ -1463,6 +1463,11 @@ video {
 .animate-once {
   --tw-animate-iteration: 1;
   animation-iteration-count: var(--tw-animate-iteration);
+}
+
+.main-container{
+  background :linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/bg-1.jpg) no-repeat center ;
+  background-size: cover;
 }
 
 .key-box{
