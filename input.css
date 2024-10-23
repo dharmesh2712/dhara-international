@@ -1,3 +1,151 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.key-box{
+    box-shadow: 8px 8px 12px 1px gray;
+     @apply bg-white w-80 p-4 flex flex-col gap-3 rounded-lg;
+
+    p:first-child{
+        @apply text-base md:text-2xl mt-3 font-semibold !leading-9
+    }
+    p:last-child{
+       @apply text-base md:text-xl mt-3 !leading-9;
+    }
+  }
+  .key-box:hover{
+    /* box-shadow: 8px 8px 12px 1px gray; */
+    @apply animate-jump animate-duration-1000
+    /* transform: translate3d(0px, -11px, 0px); */
+}
+.products-tool{
+	background-color: rgba(2555, 2555, 255, 0.4);
+	@apply  w-40 p-4 rounded-lg flex flex-col items-center justify-center gap-4;
+
+	>p{
+		@apply text-xl
+	}
+	.product-name{
+		@apply  md:text-xl !leading-9 text-center
+	}
+
+}
+
+
+  @-webkit-keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes zoomIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	50% {
+		opacity: 1;
+	}
+}
+@keyframes zoomIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	50% {
+		opacity: 1;
+	}
+}
+/*End Animations*/
+/*
+-- Start BackGround Animation 
+*/
+.area {
+    @apply w-full h-full absolute z-[-1] left-0 top-0;
+}
+.circles {
+    @apply absolute w-full h-[96%] overflow-hidden left-0 top-0;
+}
+
+.circles li {
+	@apply absolute block w-5 h-5 animate-[animate_25s_linear_infinite] bottom-[-150px];
+	list-style: none;
+	background: rgba(239, 1, 1);
+}
+.circles li:nth-child(1) {
+	@apply w-20 h-20 left-1/4;
+	animation-delay: 0s;
+}
+.circles li:nth-child(2) {
+	@apply w-5 h-5 left-[10%];
+	animation-delay: 2s;
+	animation-duration: 12s;
+}
+.circles li:nth-child(3) {
+	@apply w-5 h-5 left-[70%];
+	animation-delay: 4s;
+}
+.circles li:nth-child(4) {
+	@apply w-[60px] h-[60px] left-[40%];
+	animation-delay: 0s;
+	animation-duration: 18s;
+}
+.circles li:nth-child(5) {
+	@apply w-5 h-5 left-[65%];
+	animation-delay: 0s;
+}
+.circles li:nth-child(6) {
+	@apply w-[110px] h-[110px] left-3/4;
+	animation-delay: 3s;
+}
+.circles li:nth-child(7) {
+	@apply w-[150px] h-[150px] left-[35%];
+	animation-delay: 7s;
+}
+.circles li:nth-child(8) {
+	@apply w-[25px] h-[25px] left-2/4;
+	animation-delay: 15s;
+	animation-duration: 45s;
+}
+.circles li:nth-child(9) {
+	@apply w-[15px] h-[15px] left-[20%];
+	animation-delay: 2s;
+	animation-duration: 35s;
+}
+.circles li:nth-child(10) {
+	@apply w-[150px] h-[150px] left-[85%];
+	animation-delay: 0s;
+	animation-duration: 11s;
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+		border-radius: 0;
+	}
+
+	100% {
+		transform: translateY(-1000px) rotate(720deg);
+		opacity: 0;
+		border-radius: 50%;
+	}
+}
+/*
+-- End BackGround Animation 
+*/

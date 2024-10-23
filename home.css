@@ -2,9 +2,16 @@
 @layer base {
 html{
     font-family: "Poppins", sans-serif;
+}
 
 }
+.main-container{
+    background :linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/bg-1.jpg) no-repeat center ;
+    background-size: cover;
+    
 }
 .navbar{
-    background-color: rgb(255 255 255 / 30%);
+    /* background-color: rgb(255 255 255 / 30%);
+     */
+     background-color: rgba(255, 255, 255, 0.642);
 }
