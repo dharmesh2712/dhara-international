@@ -5,6 +5,10 @@
     background :linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/bg-1.jpg) no-repeat center ;
     background-size: cover;    
 }
+.aboust-us-main{
+    background :linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/bg-2.jpg) no-repeat center ;
+    background-size: cover;    
+}
 .key-box{
     box-shadow: 8px 8px 12px 1px #1e5359;
      @apply bg-white w-80 p-4 flex flex-col gap-3 rounded-lg;
