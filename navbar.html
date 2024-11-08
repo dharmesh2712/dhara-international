@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <style>
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.642);
+    }
+    .active-link {
+      color: #1d4ed8 !important;
+    }
+  </style>
+  <body>
+    <nav class="border-gray-200 dark:bg-gray-900 navbar animate-slidein300">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="./images/Dhara_International_-_Final_Logo_-_Glanz-01-removebg-preview.png"
+            class="h-8"
+            alt="Flowbite Logo"
+          />
+        </div>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            id="login-popup"
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Login
+          </button>
+          <button
+            id="navbar-toggle"
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-cta"
+        >
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="/index.html"
+                id="homeLink"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-blue-700"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/aboutus.html"
+                id="aboutLink"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-blue-700"
+                aria-current="page"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-blue-700"
+                >Our Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-blue-700"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="loginModal"
+      class="fixed hidden top-0 left-0 w-full h-full bg-black bg-opacity-50 items-center justify-center z-10"
+    >
+      <div
+        class="bg-white rounded-lg p-8 w-[90%] max-w-md animate__animated animate__fadeIn"
+      >
+        <div class="flex justify-end">
+          <button
+            id="closeBtn"
+            class="text-gray-800 text-xl"
+            onclick="closePopup()"
+          >
+            &times;
+          </button>
+        </div>
+        <h2
+          class="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-center text-gray-800"
+        >
+          Login
+        </h2>
+        <form id="loginForm" class="space-y-4">
+          <div>
+            <label
+              for="username"
+              class="block text-gray-700 text-sm md:text-base lg:text-lg font-bold mb-2"
+            >
+              Username
+            </label>
+            <input
+              class="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+              id="username"
+              type="text"
+              placeholder="Enter your username"
+            />
+            <p id="usernameError" class="text-red-500 text-sm"></p>
+          </div>
+          <div>
+            <label
+              class="block text-gray-700 text-sm md:text-base lg:text-lg font-bold mb-2"
+              for="password"
+            >
+              Password
+            </label>
+            <div class="relative">
+              <input
+                class="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                id="password"
+                type="password"
+                placeholder="Enter your password"
+              />
+              <button
+                id="togglePassword"
+                class="absolute top-0 right-0 mt-3 mr-4 text-gray-700 cursor-pointer focus:outline-none"
+                type="button"
+              >
+                <i id="eyeIcon" class="far fa-eye"></i>
+              </button>
+            </div>
+            <p id="passwordError" class="text-red-500 text-sm"></p>
+          </div>
+          <button
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    document
+      .getElementById("login-popup")
+      .addEventListener("click", function () {
+        document.getElementById("loginModal").style.display = "flex";
+      });
+
+    function closePopup() {
+      document.getElementById("loginModal").style.display = "none";
+    }
+    document
+      .getElementById("navbar-toggle")
+      .addEventListener("click", function () {
+        const navbarCta = document.getElementById("navbar-cta");
+        navbarCta.classList.toggle("hidden");
+      });
+    // JavaScript to apply active link styling based on URL
+    console.log("kk");
+    const currentPage = window.location.pathname;
+    console.log(currentPage);
+    if (currentPage.includes("index.html")) {
+      console.log("ll");
+      document.getElementById("homeLink").classList.add("active-link");
+    } else if (currentPage.includes("aboutus.html")) {
+      document.getElementById("aboutLink").classList.add("active-link");
+    }
+  </script>
+</html>

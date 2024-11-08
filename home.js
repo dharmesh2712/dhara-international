@@ -1,13 +1,4 @@
-document.getElementById('login-popup').addEventListener('click',function(){
- document.getElementById('loginModal').style.display = 'flex'    
-});
-document.getElementById('navbar-toggle').addEventListener('click', function() {
-    const navbarCta = document.getElementById('navbar-cta');
-    navbarCta.classList.toggle('hidden');
-  });
-function closePopup(){
-    document.getElementById('loginModal').style.display = 'none'
-}
+
   document.addEventListener("DOMContentLoaded", function () {
     const sliderWrapper = document.querySelector(".slider-wrapper");
     let isSliding = true;
@@ -26,3 +17,14 @@ function closePopup(){
 
     startSlider(); // Initial start
   });
+  // function resizeIframe(obj) {
+  //   console.log("88")
+  //   obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  // }
+  $(function(){
+    $("#navbar-part").load("navbar.html");
+  });
+  $(function(){
+    $("#footer-part").load("footer.html");
+  });
+  
