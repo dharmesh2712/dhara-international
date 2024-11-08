@@ -21,13 +21,33 @@ module.exports = {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+        textfadin:{
+          from :{
+            opacity: 0
+          },
+          to :{
+            opacity: 1
+          }
+        },
+        textslideup:{
+          from :{
+            opacity: 0,
+            transform:'translateY(20px)'
+          },
+          to: {
+            opacity: 1,
+            transform: 'translateY(0)'
+          }
+        }
+        
       },
       animation: {
         slidein300: "slidein 1s ease  forwards",
         slidein500: "slidein 2s ease forwards",
         slidein700: "slidein 3s ease  forwards",
         slide: 'slide 10s linear infinite',
-
+        fadein:'textfadin 1s ease-in forwards' ,
+        slideup:'textslideup 1s ease-out forwards'
       },
     },
   },
