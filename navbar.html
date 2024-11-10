@@ -69,7 +69,7 @@
           >
             <li>
               <a
-                href="/dhara-international/index.html"
+                href="/index.html"
                 id="homeLink"
                 class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-blue-700"
                 aria-current="page"
@@ -78,7 +78,7 @@
             </li>
             <li>
               <a
-                href="/dhara-international/aboutus.html"
+                href="/aboutus.html"
                 id="aboutLink"
                 class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-blue-700"
                 aria-current="page"
@@ -87,9 +87,18 @@
             </li>
             <li>
               <a
-                href="#"
+                href="/products.html"
+                id="productsLink"
                 class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-blue-700"
                 >Our Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="/quality.html"
+                id="qualityLink"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-blue-700"
+                >Quality</a
               >
             </li>
             <li>
@@ -191,14 +200,15 @@
         navbarCta.classList.toggle("hidden");
       });
     // JavaScript to apply active link styling based on URL
-    console.log("kk");
     const currentPage = window.location.pathname;
-    console.log(currentPage);
     if (currentPage.includes("index.html")) {
-      console.log("ll");
       document.getElementById("homeLink").classList.add("active-link");
     } else if (currentPage.includes("aboutus.html")) {
       document.getElementById("aboutLink").classList.add("active-link");
+    } else if (currentPage.includes("products.html")) {
+      document.getElementById("productsLink").classList.add("active-link");
+    } else if (currentPage.includes("quality.html")) {
+      document.getElementById("qualityLink").classList.add("active-link");
     }
   </script>
 </html>

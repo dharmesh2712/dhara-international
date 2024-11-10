@@ -1,7 +1,9 @@
 html{
     font-family: Poppins;
 }
-.aboust-us-main{
-    background :linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/bg-2.jpg) no-repeat center ;
-    background-size: cover;    
+.about-us-part-1{
+    background-color: #16adbe;
+    .about-us-part-1-shad{
+        box-shadow: 8px 8px 32px 7px #343636;
+    }
 }
