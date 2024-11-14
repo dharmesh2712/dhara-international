@@ -27,4 +27,3 @@
   $(function(){
     $("#footer-part").load("footer.html");
   });
-  
