@@ -36,7 +36,7 @@ document
   .getElementById("addProduct")
   .addEventListener("click", function (e) {
     e.preventDefault();
-    set(ref(db, "products/"+"cardiovascularAPIs"), {
+    set(ref(db, "products/"+"cns"), {
       product: ["Atorvastatin Calcium", "Amlodipine Besylate", "Carbamazepine","Valsartan","Rosuvastatin Calcium","Hydrochlorothiazide","Clopidogrel Bisulfate","Apixaban","Losartan","Ranolazine","Nifedipine"]
     });
     alert("Product added successfully  !");
