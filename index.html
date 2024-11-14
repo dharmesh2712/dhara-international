@@ -37,7 +37,7 @@
         class="banner-part h-[90vh] flex flex-col items-center justify-center text-white p-3 md:gap-10 gap-5"
       >
         <p class="md:text-3xl font-semibold welcome-text italic">
-          Welcome to Dhara International
+          Welcome to Dharaa International
         </p>
         <div
           class="md:gap-10 gap-5 w-full flex flex-col items-center justify-center"
@@ -80,7 +80,7 @@
         <p
           class="text-2xl md:text-5xl font-semibold text-center border-b-4 border-[#16adbe] text-gray-800"
         >
-          About Us
+          About Dharaa International
         </p>
       </div>
       <div class="flex flex-col md:flex-row gap-4 md:gap-8 mt-6">
@@ -93,7 +93,7 @@
             class="w-full md:w-[90%] rounded-lg h-auto md:h-fit object-cover"
           />
         </div>
-        <div class="w-full md:w-[60%] flex items-center">
+        <div class="w-full md:w-[60%] flex flex-col items-start gap-4">
           <div class="text-gray-700">
             <p class="text-base md:text-xl mt-3 md:mt-5 !leading-9">
               At <strong>Dharaa International</strong>, we are dedicated to
@@ -105,15 +105,24 @@
               areas like cardiovascular, central nervous system, antidiabetic,
               antibiotic, and analgesic treatments.
             </p>
+            <p
+              class="text-base md:text-xl mt-3 md:mt-4 !leading-9 text-gray-700"
+            >
+              Our mission is to enhance global healthcare by providing the
+              purest and most effective APIs, ensuring patients receive the best
+              care possible. We proudly serve markets worldwide, offering
+              reliable logistics and on-time deliveries through our robust
+              supply chain network.
+            </p>
           </div>
+          <button
+            type="button"
+            class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+          >
+            Learn More About Us
+          </button>
         </div>
       </div>
-      <p class="text-base md:text-xl mt-3 md:mt-4 !leading-9 text-gray-700">
-        Our mission is to enhance global healthcare by providing the purest and
-        most effective APIs, ensuring patients receive the best care possible.
-        We proudly serve markets worldwide, offering reliable logistics and
-        on-time deliveries through our robust supply chain network.
-      </p>
     </div>
     <div class="key-strength flex flex-col gap-12 p-8 relative">
       <div class="area">
@@ -137,42 +146,50 @@
           Why Choose Dharaa International?
         </p>
       </div>
-      <div class="flex justify-center flex-wrap gap-10 text-gray-700">
-        <div class="key-box">
-          <p class="border-b-4 border-[#16adbe] w-fit">Unmatched Quality :</p>
-          <p>
-            Our APIs are manufactured under strict
-            <strong>Good Manufacturing Practices (GMP)</strong>, ensuring safety
-            and efficacy.
-          </p>
+      <div class="flex flex-col gap-10 items-center">
+        <div class="flex justify-center flex-wrap gap-10 text-gray-700">
+          <div class="key-box">
+            <p class="border-b-4 border-[#16adbe] w-fit">Unmatched Quality :</p>
+            <p>
+              Our APIs are manufactured under strict
+              <strong>Good Manufacturing Practices (GMP)</strong>, ensuring
+              safety and efficacy.
+            </p>
+          </div>
+          <div class="key-box">
+            <p class="border-b-4 border-[#16adbe] w-fit">
+              Therapeutic Expertise :
+            </p>
+            <p>
+              Extensive experience across key therapeutic areas such as
+              <strong>cardiovascular</strong>,
+              <strong>central nervous system</strong>,
+              <strong>antidiabetic</strong>, and more.
+            </p>
+          </div>
+          <div class="key-box">
+            <p class="border-b-4 border-[#16adbe] w-fit">Global Reach :</p>
+            <p>
+              Our APIs are trusted by pharmaceutical companies across the globe,
+              ensuring timely deliveries and reliable support.
+            </p>
+          </div>
+          <div class="key-box">
+            <p class="border-b-4 border-[#16adbe] w-fit">
+              Commitment to Ethics :
+            </p>
+            <p>
+              We adhere to the highest <strong>ethical standards</strong>,
+              ensuring transparency and integrity in all our operations.
+            </p>
+          </div>
         </div>
-        <div class="key-box">
-          <p class="border-b-4 border-[#16adbe] w-fit">
-            Therapeutic Expertise :
-          </p>
-          <p>
-            Extensive experience across key therapeutic areas such as
-            <strong>cardiovascular</strong>,
-            <strong>central nervous system</strong>,
-            <strong>antidiabetic</strong>, and more.
-          </p>
-        </div>
-        <div class="key-box">
-          <p class="border-b-4 border-[#16adbe] w-fit">Global Reach :</p>
-          <p>
-            Our APIs are trusted by pharmaceutical companies across the globe,
-            ensuring timely deliveries and reliable support.
-          </p>
-        </div>
-        <div class="key-box">
-          <p class="border-b-4 border-[#16adbe] w-fit">
-            Commitment to Ethics :
-          </p>
-          <p>
-            We adhere to the highest <strong>ethical standards</strong>,
-            ensuring transparency and integrity in all our operations.
-          </p>
-        </div>
+        <button
+          type="button"
+          class="text-white bg-gradient-to-br from-gray-400 to-gray-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 w-fit"
+        >
+          Discover Our Quality Commitment
+        </button>
       </div>
     </div>
     <div class="products flex flex-col gap-10 p-8 text-gray-700">
@@ -188,45 +205,108 @@
         <strong>Active Pharmaceutical Ingredients (APIs)</strong>
         that cater to diverse medical needs. Our portfolio includes APIs for:
       </p>
-      <div class="overflow-hidden w-full">
-        <div class="flex gap-24 slider-wrapper animate-slide py-5">
-          <div class="products-tool min-w-[300px]">
-            <p class="font-semibold text-center">Cardiovascular treatments</p>
-            <div class="rounded-lg overflow-hidden">
-              <img src="./images/Cardio vascular.jpg" alt="" />
+      <div class="overflow-hidden w-full flex flex-col items-center gap-7">
+        <div>
+          <div class="flex gap-24 slider-wrapper animate-slide py-5">
+            <div class="products-tool min-w-[300px]">
+              <p class="font-semibold text-center">Cardiovascular treatments</p>
+              <div class="rounded-lg overflow-hidden">
+                <img src="/images/Cardio vascular.jpg" alt="" />
+              </div>
+              <!-- <div class="w-full flex flex-col gap-6">
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Atorvastatin
+                </div>
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Losartan
+                </div>
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Amlodipine
+                </div>
+              </div> -->
             </div>
-          </div>
-          <div class="products-tool min-w-[300px]">
-            <p class="font-semibold text-center">Central Nervous System</p>
-            <div class="rounded-lg overflow-hidden">
-              <img src="./images/cns.jpg" alt="" />
+            <div class="products-tool min-w-[300px]">
+              <p class="font-semibold text-center">Central Nervous System</p>
+              <div class="rounded-lg overflow-hidden">
+                <img src="/images/cns.jpg" alt="" />
+              </div>
+              <!-- <div class="w-full flex flex-col gap-6">
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Diazepam
+                </div>
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Quetiapine
+                </div>
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Clonazepam
+                </div>
+              </div> -->
             </div>
-          </div>
-          <div class="products-tool min-w-[300px]">
-            <p class="font-semibold text-center">Antidiabetic solutions</p>
-            <div class="rounded-lg overflow-hidden">
-              <img src="./images/diabetic image.webp" alt="" />
+            <div class="products-tool min-w-[300px]">
+              <p class="font-semibold text-center">Antidiabetic solutions</p>
+              <div class="rounded-lg overflow-hidden">
+                <img src="/images/diabetic image.webp" alt="" />
+              </div>
+              <!-- <div class="w-full flex flex-col gap-6">
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Metformin
+                </div>
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Linagliptin
+                </div>
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Empagliflozin
+                </div>
+              </div> -->
             </div>
-          </div>
-          <div class="products-tool min-w-[300px]">
-            <p class="font-semibold text-center">Antibiotics</p>
-            <div class="rounded-lg overflow-hidden">
-              <img src="./images/analgesic.jpg" alt="" />
+            <div class="products-tool min-w-[300px]">
+              <p class="font-semibold text-center">Antibiotics</p>
+              <div class="rounded-lg overflow-hidden">
+                <img src="/images/analgesic.jpg" alt="" />
+              </div>
+              <!-- <div class="w-full flex flex-col gap-6">
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Moxifloxacin
+                </div>
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Ciprofloxacin
+                </div>
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Gentamicin
+                </div>
+              </div> -->
             </div>
-          </div>
-          <div class="products-tool min-w-[300px]">
-            <p class="font-semibold text-center">Analgesics</p>
-            <div class="rounded-lg overflow-hidden">
-              <img src="./images/analgesic.jpg" alt="" />
+            <div class="products-tool min-w-[300px]">
+              <p class="font-semibold text-center">Analgesics</p>
+              <div class="rounded-lg overflow-hidden">
+                <img src="/images/analgesic.jpg" alt="" />
+              </div>
+              <!-- <div class="w-full flex flex-col gap-6">
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Ibuprofen
+                </div>
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Tramadol
+                </div>
+                <div class="p-2 bg-indigo-50 rounded-md text-center w-full">
+                  Hydrocortisone
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
+        <button
+          type="button"
+          class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+        >
+          View Our Full Product Line
+        </button>
       </div>
     </div>
     <div class="highlighted-section md:p-16 p-8">
       <div class="flex gap-14 w-full justify-around flex-wrap">
         <div
-          class="flex flex-col gap-6 p-3 bg-for-trans rounded-2xl highlighted-box w-96"
+          class="flex flex-col gap-6 p-3 bg-for-trans rounded-2xl highlighted-box w-96 items-center"
         >
           <p class="text-3xl font-semibold text-center highlighted-header">
             Commitment to Innovation and Quality
@@ -241,9 +321,15 @@
             every product meets global regulatory standards and is trusted by
             healthcare providers worldwide.
           </p>
+          <button
+            type="button"
+            class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 w-fit"
+          >
+            Learn More About Our Innovation
+          </button>
         </div>
         <div
-          class="flex flex-col gap-6 p-3 bg-for-trans rounded-2xl highlighted-box w-96"
+          class="flex flex-col gap-6 p-3 bg-for-trans rounded-2xl highlighted-box w-96 items-center"
         >
           <p class="text-3xl font-semibold text-center highlighted-header">
             Global Presence (Logistics & Distribution)
@@ -258,6 +344,12 @@
             global partners. We are committed to seamless operations that
             prioritize the <strong>speed and safety</strong> of our products.
           </p>
+          <button
+            type="button"
+            class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 w-fit"
+          >
+            Contact Us for Distribution Information
+          </button>
         </div>
       </div>
     </div>

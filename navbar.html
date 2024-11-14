@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <style>
     .navbar {
@@ -30,7 +34,7 @@
           <button
             id="login-popup"
             type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
           >
             Login
           </button>
@@ -69,7 +73,7 @@
           >
             <li>
               <a
-                href="/dhara-international/index.html"
+                href="/index.html"
                 id="homeLink"
                 class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-blue-700"
                 aria-current="page"
@@ -78,7 +82,7 @@
             </li>
             <li>
               <a
-                href="/dhara-international/aboutus.html"
+                href="/aboutus.html"
                 id="aboutLink"
                 class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-blue-700"
                 aria-current="page"
@@ -87,25 +91,24 @@
             </li>
             <li>
               <a
-                href="/dhara-international/products.html"
+                href="/products.html"
                 id="productsLink"
                 class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-blue-700"
-                aria-current="page"
                 >Our Products</a
               >
             </li>
             <li>
               <a
-                href="/dhara-international/quality.html"
+                href="/quality.html"
                 id="qualityLink"
                 class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-blue-700"
-                aria-current="page"
                 >Quality</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="/contactus.html"
+                id="contactUsLink"
                 class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-blue-700"
                 >Contact Us</a
               >
@@ -141,13 +144,13 @@
               for="username"
               class="block text-gray-700 text-sm md:text-base lg:text-lg font-bold mb-2"
             >
-              Username
+              Email
             </label>
             <input
-              class="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-              id="username"
+              class="appearance-none border rounded w-full text-gray-700 py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+              id="email"
               type="text"
-              placeholder="Enter your username"
+              placeholder="Enter your email"
             />
             <p id="usernameError" class="text-red-500 text-sm"></p>
           </div>
@@ -160,14 +163,14 @@
             </label>
             <div class="relative">
               <input
-                class="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                class="appearance-none border text-gray-700 rounded w-full py-2 px-3 pr-10 leading-tight focus:outline-none focus:shadow-outline"
                 id="password"
                 type="password"
                 placeholder="Enter your password"
               />
               <button
                 id="togglePassword"
-                class="absolute top-0 right-0 mt-3 mr-4 text-gray-700 cursor-pointer focus:outline-none"
+                class="absolute top-0 right-0 mt-2 mr-3 text-gray-700 cursor-pointer focus:outline-none"
                 type="button"
               >
                 <i id="eyeIcon" class="far fa-eye"></i>
@@ -176,8 +179,9 @@
             <p id="passwordError" class="text-red-500 text-sm"></p>
           </div>
           <button
+            id="loginbtn"
             type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
           >
             Login
           </button>
@@ -185,32 +189,5 @@
       </div>
     </div>
   </body>
-  <script>
-    document
-      .getElementById("login-popup")
-      .addEventListener("click", function () {
-        document.getElementById("loginModal").style.display = "flex";
-      });
-
-    function closePopup() {
-      document.getElementById("loginModal").style.display = "none";
-    }
-    document
-      .getElementById("navbar-toggle")
-      .addEventListener("click", function () {
-        const navbarCta = document.getElementById("navbar-cta");
-        navbarCta.classList.toggle("hidden");
-      });
-    // JavaScript to apply active link styling based on URL
-    const currentPage = window.location.pathname;
-    if (currentPage.includes("index.html")) {
-      document.getElementById("homeLink").classList.add("active-link");
-    } else if (currentPage.includes("aboutus.html")) {
-      document.getElementById("aboutLink").classList.add("active-link");
-    } else if (currentPage.includes("products.html")) {
-      document.getElementById("productsLink").classList.add("active-link");
-    } else if (currentPage.includes("quality.html")) {
-      document.getElementById("qualityLink").classList.add("active-link");
-    }
-  </script>
+  <script src="./navbar.js"></script>
 </html>
