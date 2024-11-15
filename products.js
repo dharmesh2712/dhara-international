@@ -24,9 +24,11 @@ let antibioticAPIs;
 let analgesicAPIs;
 let productCategory = "";
 const app = initializeApp(firebaseConfig);
-document.getElementsByClassName("addbtn")[0].style.display = isLoggedIn
-  ? "block"
-  : "none";
+const addProduct = document.getElementsByClassName("addbtn");
+for (let index = 0; index < addProduct.length; index++) {
+  addProduct[index].style.display = isLoggedIn ? "block" : "none";
+}
+
 const db = getDatabase(app);
 const dbRef = ref(getDatabase());
 get(child(dbRef, `products`))
