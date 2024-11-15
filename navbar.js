@@ -66,5 +66,6 @@ document.getElementById("loginbtn").addEventListener("click", function () {
     password: document.getElementById("password")?.value,
   };
   localStorage.setItem("user", JSON.stringify(user));
-    document.getElementById("loginModal").style.display = "none";
+  document.getElementById("loginModal").style.display = "none";
+  // window.location.reload();
 });
