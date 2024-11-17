@@ -1,5 +1,14 @@
+const isLoggedIn = localStorage.getItem("user") ? true : false;
+document.getElementById("login-popup").innerHTML = isLoggedIn
+  ? "Log Out"
+  : "Login";
 document.getElementById("login-popup").addEventListener("click", function () {
-  document.getElementById("loginModal").style.display = "flex";
+  if (isLoggedIn) {
+    localStorage.clear();
+    window.location.reload();
+  } else {
+    document.getElementById("loginModal").style.display = "flex";
+  }
 });
 
 function closePopup() {
@@ -9,17 +18,16 @@ document.getElementById("navbar-toggle").addEventListener("click", function () {
   const navbarCta = document.getElementById("navbar-cta");
   navbarCta.classList.toggle("hidden");
 });
-// JavaScript to apply active link styling based on URL
 const currentPage = window.location.pathname;
-if (currentPage.includes("index.html")) {
+if (currentPage.includes("index")) {
   document.getElementById("homeLink").classList.add("active-link");
-} else if (currentPage.includes("aboutus.html")) {
+} else if (currentPage.includes("aboutus")) {
   document.getElementById("aboutLink").classList.add("active-link");
-} else if (currentPage.includes("products.html")) {
+} else if (currentPage.includes("products")) {
   document.getElementById("productsLink").classList.add("active-link");
-} else if (currentPage.includes("quality.html")) {
+} else if (currentPage.includes("quality")) {
   document.getElementById("qualityLink").classList.add("active-link");
-} else if (currentPage.includes("contactus.html")) {
+} else if (currentPage.includes("contactus")) {
   document.getElementById("contactUsLink").classList.add("active-link");
 } else {
   document.getElementById("homeLink").classList.add("active-link");
@@ -42,16 +50,17 @@ document.getElementById("loginbtn").addEventListener("click", function () {
   document.getElementById("usernameError").innerHTML = "";
   document.getElementById("passwordError").innerHTML = "";
   if (!document.getElementById("email")?.value) {
-    document.getElementById("usernameError").innerHTML = "Please enter email.";
+    document.getElementById("usernameError").innerHTML = "Please enter email";
     return;
   }
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(document.getElementById("email").value)) {
-    document.getElementById("usernameError").innerHTML = "Please valid email.";
+    document.getElementById("usernameError").innerHTML =
+      "Please enter valid email";
     return;
   }
-  if (document.getElementById("email")?.value !== "dharmesh@gmail.com") {
-    document.getElementById("usernameError").innerHTML = "User not found.";
+  if (document.getElementById("email")?.value !== "arpanchangani18@gmail.com") {
+    document.getElementById("usernameError").innerHTML = "Invalid credentials";
     return;
   }
   if (!document.getElementById("password")?.value) {
@@ -59,8 +68,8 @@ document.getElementById("loginbtn").addEventListener("click", function () {
       "Please enter password.";
     return;
   }
-  if (document.getElementById("password")?.value !== "dharmesh") {
-    document.getElementById("passwordError").innerHTML = "Invalid password.";
+  if (document.getElementById("password")?.value !== "Arpan@1618") {
+    document.getElementById("passwordError").innerHTML = "Invalid credentials";
     return;
   }
   const user = {
