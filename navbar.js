@@ -21,6 +21,8 @@ if (currentPage.includes("index.html")) {
   document.getElementById("qualityLink").classList.add("active-link");
 } else if (currentPage.includes("contactus.html")) {
   document.getElementById("contactUsLink").classList.add("active-link");
+} else {
+  document.getElementById("homeLink").classList.add("active-link");
 }
 document
   .getElementById("togglePassword")
