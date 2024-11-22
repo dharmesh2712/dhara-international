@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.{html,js,css}'],
+  content: ["./*.{html,js,css}"],
   theme: {
     extend: {
       fontFamily: {
@@ -18,39 +18,39 @@ module.exports = {
           },
         },
         slide: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
+          "0%": { transform: "translateX(100%)" },
+          "50%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
-        textfadin:{
-          from :{
-            opacity: 0
-          },
-          to :{
-            opacity: 1
-          }
-        },
-        textslideup:{
-          from :{
+        textfadin: {
+          from: {
             opacity: 0,
-            transform:'translateY(20px)'
           },
           to: {
             opacity: 1,
-            transform: 'translateY(0)'
-          }
-        }
-        
+          },
+        },
+        textslideup: {
+          from: {
+            opacity: 0,
+            transform: "translateY(20px)",
+          },
+          to: {
+            opacity: 1,
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         slidein300: "slidein 1s ease  forwards",
         slidein500: "slidein 2s ease forwards",
         slidein700: "slidein 3s ease  forwards",
-        slide: 'slide 10s linear infinite',
-        fadein:'textfadin 1s ease-in forwards' ,
-        slideup:'textslideup 1s ease-out forwards'
+        slide: "slide 20s linear infinite",
+        fadein: "textfadin 1s ease-in forwards",
+        slideup: "textslideup 1s ease-out forwards",
       },
     },
   },
-  plugins: [require("tailwindcss-animated")], autoprefixer: {},
-}
-
+  plugins: [require("tailwindcss-animated")],
+  autoprefixer: {},
+};
