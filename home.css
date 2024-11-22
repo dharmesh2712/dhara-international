@@ -1,40 +1,33 @@
-
 @layer base {
-html{
+  html {
     font-family: "Poppins", sans-serif;
+  }
 }
+.welcome-text {
+  font-family: cursive;
 }
-.welcome-text{
-    font-family: cursive;
-}
-.main-heading-text{
+.main-heading-text {
   font-family: Kanit;
 }
 /* .banner-part{
     font-family: Josefin Sans;
 } */
-.area{
-    background-color: #1badbd;
+.area {
+  background-color: #1badbd;
 }
-.products{
-    background-color: #95ebf24a;
+.products {
+  background-color: #95ebf24a;
 }
-.highlighted-section{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/IMG-20241014-WA0011.jpg) no-repeat ;
-    background-size: cover;
-    color: black;
+.highlighted-section {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/IMG-20241014-WA0011.jpg) no-repeat;
+  background-size: cover;
+  color: black;
 }
-.bg-for-trans{
-    background-color: rgba(255, 255, 255, 0.442);
-}
-
-.highlighted-header{
-    color: black;
-    -webkit-text-fill-color: black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;    
+.bg-for-trans {
+  background-color: rgba(255, 255, 255, 0.442);
 }
 
-.highlighted-box{
-    box-shadow: 8px 8px 32px 7px #343636;
+.highlighted-box {
+  box-shadow: 8px 8px 32px 7px #343636;
 }
