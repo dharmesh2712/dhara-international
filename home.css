@@ -4,10 +4,10 @@
   }
 }
 .welcome-text {
-  font-family: cursive;
+  font-family: "Merienda";
 }
 .main-heading-text {
-  font-family: Kanit;
+  font-family: "Merienda";
 }
 /* .banner-part{
     font-family: Josefin Sans;
@@ -30,4 +30,7 @@
 
 .highlighted-box {
   box-shadow: 8px 8px 32px 7px #343636;
+}
+.sub-heading-text {
+  font-family: "Merienda", serif;
 }
