@@ -10,9 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     sliderWrapper.classList.remove("animate-slide");
   }
 
-  sliderWrapper.addEventListener("mouseenter", stopSlider);
-  sliderWrapper.addEventListener("mouseleave", startSlider);
-
   startSlider();
 });
 
