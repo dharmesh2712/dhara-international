@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins"],
       },
+      brightness: {
+        55: "5.5",
+      },
       keyframes: {
         slidein: {
           from: {
