@@ -744,6 +744,10 @@ video {
   margin-inline-end: 0.5rem;
 }
 
+.ml-\[-10px\] {
+  margin-left: -10px;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
