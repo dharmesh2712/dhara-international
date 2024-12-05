@@ -17,6 +17,17 @@
     .active-link {
       color: #1d4ed8 !important;
     }
+    #google_translate_element {
+      height: 27px;
+      overflow: hidden;
+      .goog-te-gadget .goog-te-combo {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 0px 10px;
+        height: 24px;
+        margin: 0px;
+      }
+    }
   </style>
   <body>
     <nav class="border-gray-200 dark:bg-gray-900 navbar animate-slidein300">
@@ -113,6 +124,9 @@
                 >Contact Us</a
               >
             </li>
+            <li>
+              <div id="google_translate_element"></div>
+            </li>
           </ul>
         </div>
       </div>
@@ -188,6 +202,18 @@
         </form>
       </div>
     </div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
   </body>
   <script src="./navbar.js"></script>
 </html>
