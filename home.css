@@ -20,8 +20,9 @@
 }
 .highlighted-section {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/IMG-20241014-WA0011.jpg) no-repeat;
+    url(./images/commitment__bgIimage.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
   color: black;
 }
 .bg-for-trans {
